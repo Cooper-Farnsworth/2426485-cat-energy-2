@@ -7,3 +7,18 @@
     src: $font-src;
   }
 }
+
+@mixin flex($dir:row, $align:center, $justify:space-between) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin pseudo($width, $height) {
+  content: "";
+  display: block;
+  position: absolute;
+  width: $width;
+  height: $height;
+}
